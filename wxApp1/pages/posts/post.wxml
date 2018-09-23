@@ -1,0 +1,33 @@
+<import src="post-item/post-item-template.wxml"></import>
+<!-- <import src="/pages/posts/post-item/post-item-template.wxml"></import> -->
+<!-- 若是引用模板文件的时候 相对路径可以,绝对路径也是可以的 -->
+<!-- 新建页面先注册 在app.json中注册 -->
+<!-- 在app.json中 注册时 按顺序排序列 谁在前谁就是首页，以此类推 -->
+<view>
+  <!-- 轮播图组件 -->
+  <swiper catch:tap="onSwiperTap" indicator-dots="{{true}}" autoplay="{{true}}" interval="5000">
+    <!-- indicator-dots 指示点，autoplay 是否自动轮换，
+        interval 自动切换间隔,  vertical 垂直滚动 -->
+    <swiper-item>
+      <!-- swiper-item 设置宽高是无效的 取值继承于父级swiper -->
+      <image src="/images/tangorsong.png" data-postId="5" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/taoqian.png" data-postId="6" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/music.png" data-postId="7" />
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="index">
+    <!-- block 标签就相当于一个括号 内部视为一个整体 -->
+    <!-- block 标签上 添加wx:for=“{{集合}}” 就能实现循环 -->
+    <!-- wx:for-item/for-index ---- item 指代对象的元素本身 index 指代序号 -->
+    <!-- 写在了模板文件post-item-template -->
+    <view catch:tap="onPostTap" data-postId="{{item.postId}}">
+      <!-- template -->
+      <template is="postItem" data="{{...item}}"></template>
+      <!-- ...item 可以item 给打开 扩展运算符 为用到的属性值的时候 可以省略item. -->
+    </view>
+  </block>
+</view>

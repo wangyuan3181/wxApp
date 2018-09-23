@@ -1,0 +1,14 @@
+<!-- wxml是编写小程序的骨架文件 -->
+<!-- rpx 可以做到不同机型的适配 通常微信小程序使用rpx 使用IP6-750px 1:1 -->
+<!-- text 支持转义字符 也可以嵌套  被text包围的文字，可以长按选中并复制 -->
+<view class="container">
+    <image class="user-img" src="/images/avatar/1.png" />
+    <text class="user-name">
+        ‘你好’
+        <text style="color:red;font-size:32px">朋友</text>
+    </text>
+    <view class="moto-container" bind:tap="onTap">
+        <text class="moto">开启小程序之旅</text>
+    </view>
+    <!-- bind:tap="事件" 可以冒泡 如果你想阻止冒泡就用catch:tap="事件" -->
+</view>
