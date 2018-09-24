@@ -1,0 +1,23 @@
+<!-- 模板文件加上-template 以示区别 -->
+<!-- 模板文件 里面加.js .josn 文件是没有用的 -->
+<template name="postItem">
+   <view class="post-container">
+      <view class="post-author-date">
+         <image wx:if="{{img_condition}}" class="post-author" src="{{img.author_img}}" />
+         <!-- wx:if 控制是否显示 true&false  也可以数据绑定绑定 有js文件动态操作T&F -->
+         <text class="post-date">{{date}}</text>
+      </view>
+      <text class="post-title">{{title}}</text>
+      <image class="post-image" src="{{img.post_img}}" />
+      <text class="post-content">{{content}}</text>
+      <view class="post-like">
+         <image class="post-like-image" src="/images/icon/share.png" />
+         <text class="post-like-font">{{share_num}}</text>
+         <image class="post-like-image" src="/images/icon/star.png" />
+         <text class="post-like-font">{{view_num}}</text>
+         <image class="post-like-image" src="/images/icon/view.png" />
+         <text class="post-like-font">{{collect_num}}</text>
+      </view>
+   </view>
+</template>
+

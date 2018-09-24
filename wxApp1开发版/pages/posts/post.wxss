@@ -1,0 +1,11 @@
+@import "post-item/post-item-template.wxss";
+/* @import  的方式引入wxss文件样式 */
+swiper {
+	width: 100%;
+	height: 550rpx;
+}
+
+swiper image {
+	width: 100%;
+	height: 550rpx;
+}

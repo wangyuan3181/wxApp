@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/post",
+    "pages/posts/post-detail/post-detail",
+    "pages/movies/movies",
+    "pages/music/music",
+    "pages/movies/movie/movie",
+    "pages/movies/stars/stars",
+    "pages/movies/movie-list/movie-list-template"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#d4237a",
+    "borderStyle": "white",
+    "position":"bottom",
+    "list": [{
+        "pagePath": "pages/posts/post",
+        "text": "诗词",
+        "iconPath": "images/tab/shici.png",
+        "selectedIconPath": "/images/tab/shici1.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "images/tab/yinyue.png",
+        "selectedIconPath": "/images/tab/yinyue1.png"
+      },
+      {
+
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying1.png"
+      }
+    ]
+    
+  }
+}

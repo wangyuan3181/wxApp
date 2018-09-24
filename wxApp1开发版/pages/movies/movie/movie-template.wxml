@@ -1,0 +1,9 @@
+<import src="../stars/stars-template.wxml"></import>
+
+<template name="movieTemplate">
+    <view class="movie-template">
+        <image src="" class="movie-img" />
+        <text class="movie-title"></text>
+        <template is="starsTemplate"></template>
+    </view>
+</template>
