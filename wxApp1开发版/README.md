@@ -71,6 +71,6 @@ wx.playBackgroundAudio({
 ![avatar](https://github.com/wangyuan3181/wxApp/blob/master/wxApp1%E5%BC%80%E5%8F%91%E7%89%88/images/show/show.gif)
 
 # 线上展示
-![avatar](https://github.com/wangyuan3181/wxApp/blob/master/wxApp1%E5%BC%80%E5%8F%91%E7%89%88/images/show/onLine.gif)
+![avatar](https://github.com/wangyuan3181/wxApp/blob/master/wxApp1%E5%BC%80%E5%8F%91%E7%89%88/images/show/onLine.png)
 
 # 未完待续...
